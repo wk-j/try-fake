@@ -1,0 +1,23 @@
+// Place your settings in this file to overwrite default and user settings.
+{
+        "saveAndRun": {
+        "commands": [
+            {
+                "match": "\\.il$",
+                "cmd": "ilasm ${relativeFile}; mono ${fileDirname}/${fileBasenameNoExt}.exe"
+            },
+            {
+                "match": "\\.csx$",
+                "cmd": "csharp ${relativeFile}"
+            },
+            {
+                "match": "build.fsx",
+                "cmd": "mono packages/FAKE/tools/Fake.exe ${relativeFile}"
+            },
+            {
+                "match": "\\.kts$",
+                "cmd": "kotlinc -script ${file}"
+            }
+        ]
+    }
+}
