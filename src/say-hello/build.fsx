@@ -1,6 +1,7 @@
-#r "../packages/FAKE/tools/FakeLib.dll"
+#r "../../packages/FAKE/tools/FakeLib.dll"
 
 open Fake
+open System
 
 Target "Deploy" (fun _ ->
     trace "Heavy deploy action"
